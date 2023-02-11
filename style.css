@@ -348,6 +348,7 @@ main {
 .rightSide {
   padding-left: 1%;
   width: 75%;
+  height: 100%;
 }
 .innerDivsHeader {
   display: flex;
@@ -370,18 +371,16 @@ main {
 }
 .rightSideFirstBlock {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   gap: 15px;
   height: 40%;
-  width: 100%;
+  /* width: 100%; */
 }
 .totalPoints {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
   width: 50%;
-  padding-top: 1%;
   background: #212734;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -400,7 +399,7 @@ main {
   cursor: pointer;
 }
 .totalPointsAllButtonsLeftSide {
-  width: 40%;
+  width: 50%;
   height: 130%;
   display: flex;
   transform: translate(10%, -105%);
@@ -470,7 +469,7 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   position: absolute;
-  bottom: 23%;
+  bottom: 18%;
   left: 84%;
   width: 25%;
   height: 100%;
@@ -510,7 +509,7 @@ main {
   width: 40%;
   height: 8%;
   position: absolute;
-  top: 97%;
+  top: 98%;
   left: 56%;
   padding: 0 3%;
   background: #212834;
@@ -527,7 +526,6 @@ main {
   position: absolute;
 }
 .mostUsableExchanges {
-  height: 100%;
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -541,6 +539,7 @@ main {
   width: 80%;
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 3%;
 }
 .mostUsableExchangesContentBlock {
   display: flex;
@@ -554,7 +553,6 @@ main {
   bottom: 9%;
 }
 .coins {
-  height: 100%;
   width: 20%;
   background: #212734;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -610,7 +608,7 @@ main {
   justify-content: space-between;
   gap: 10px;
   color: white;
-  font-size: 12px;
+  font-size: 10px;
 }
 .coinSelectedTime {
   background: #1a202c;
@@ -620,13 +618,11 @@ main {
 }
 .rightSideSecondBlock {
   display: flex;
-  align-items: center;
   gap: 15px;
   height: 33%;
   margin-top: 15px;
 }
 .usersChart {
-  height: 100%;
   width: 32%;
   padding-top: 2%;
   display: flex;
@@ -783,10 +779,9 @@ main {
 .userTimes {
   width: 70%;
   position: absolute;
-  top: 60%;
+  top: 80%;
 }
 .analytics {
-  height: 100%;
   width: 34%;
   display: flex;
   flex-direction: column;
@@ -819,7 +814,6 @@ main {
   color: white;
 }
 .futures {
-  height: 100%;
   width: 34%;
   background: #212734;
   box-shadow: 0px 3.44681px 3.44681px rgba(0, 0, 0, 0.25);
