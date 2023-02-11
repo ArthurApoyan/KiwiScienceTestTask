@@ -1,0 +1,945 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 80px;
+  background-color: #212834;
+  box-shadow: 0 4px 4px 0;
+  position: sticky;
+}
+.logoImage {
+  margin-top: 3%;
+  height: 56px;
+}
+.navBar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.navBarItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.marketPlaceIcon {
+  position: absolute;
+  transform: translate(26%, 16%);
+}
+.navBarButtons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 3px 8px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 27px;
+}
+.navBarButtons:focus {
+  background: linear-gradient(180deg, #a37df9 0%, #7b5ac5 100%);
+  border-radius: 10px;
+  padding: 3px 8px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.profileUser {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #a588e7;
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+  padding-top: 7%;
+  cursor: pointer;
+}
+.profileIconImage {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+main {
+  width: 100%;
+  min-height: 100%;
+  background: #1a202c;
+  padding: 1%;
+  display: flex;
+}
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 25%;
+  height: 100%;
+}
+.leftSideUpperBlock {
+  height: 65%;
+  width: 100%;
+  background: #212734;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 3%;
+}
+.leftSideUpperBlockButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 7px;
+}
+.hideButton {
+  width: 50%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+  background: #1a202c;
+  border: 1px solid #2b3548;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.eyeImage {
+  width: 20px;
+  height: 13px;
+}
+.sortButton {
+  width: 50%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3% 2%;
+  background: #1a202c;
+  border: 1px solid #2b3548;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.leftSideUpperBlockLabel {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.leftSideUpperBlockLabelButton {
+  position: absolute;
+  left: 15%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.leftSideUpperBlockInput {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(0deg, #1a202c, #1a202c), #ffffff;
+  border: 1px solid #2b3548;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18.3478px;
+}
+.leftSideUpperBlockMetamask {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10%;
+}
+.metamaskLogoDiv {
+  display: flex;
+  align-items: center;
+  gap: 15%;
+}
+.metamaskLogoImage {
+  height: 25px;
+  width: 25px;
+}
+.metamaskText {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.metamaskNumbers {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ff0000;
+}
+.metamaskChart {
+  display: flex;
+  align-items: center;
+  gap: 8%;
+  position: relative;
+}
+.metamaskChartSVG_2 {
+  position: absolute;
+  left: 54%;
+  top: 23%;
+}
+.metamaskIconsDiv {
+  display: flex;
+  align-items: center;
+  gap: 25%;
+}
+.metamaskIcon_1,
+.metamaskIcon_2 {
+  height: 14px;
+}
+.leftSideUpperBlockBinance {
+  height: 235px;
+  background: #1a202c;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+.binanceUpperBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #686868;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.binanceUpperBlockLeftSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.binanceLogoDiv {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.binanceLogo {
+  height: 24px;
+}
+.binanceText {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.binancePrice {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #ffffff;
+}
+.binanceUpperBlockRightSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.binanceNumbers {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #61e224;
+}
+.binanceChartSVG {
+  position: absolute;
+  /* left: 1%; */
+  top: 29%;
+}
+.binanceDownerBlock {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 2%;
+}
+.binanceDownerBlockButton {
+  background: none;
+  border: none;
+  display: flex;
+  width: 100%;
+  gap: 5%;
+  cursor: pointer;
+  padding: 3%;
+}
+.binanceDownerBlockButton:hover {
+  background: #2b3548;
+  border-radius: 7px;
+}
+.coinbase {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 10%;
+}
+.leftSideDownerBlock {
+  height: 20%;
+  width: 100%;
+  background: #212734;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5%;
+}
+.leftSideDownerLeftDiv {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10%;
+}
+.leftSideDownerBlockText {
+  font-weight: 500;
+  font-size: 16.0543px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.leftSideDownerBlockSpan {
+  color: #e04f44;
+}
+.subscribe {
+  background: #a37df9;
+  border-radius: 10px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 145%;
+  cursor: pointer;
+}
+.closeIconCircle {
+  width: 23px;
+  height: 23px;
+  background: #1a202c;
+  border-radius: 50%;
+  position: relative;
+}
+.closeIconSVG {
+  position: absolute;
+  transform: translate(68%, 60%);
+  cursor: pointer;
+}
+.rightSide {
+  padding-left: 1%;
+  width: 75%;
+}
+.innerDivsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  padding: 0 3%;
+}
+.innerDivsHeader p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+}
+.innerDivsHeader a {
+  text-decoration: none;
+  color: #805ad5;
+  padding-bottom: 15px;
+}
+.rightSideFirstBlock {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 40%;
+  width: 100%;
+}
+.totalPoints {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 50%;
+  padding-top: 1%;
+  background: #212734;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.totalPointsAllButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  padding-left: 12%;
+}
+.totalPointsAllButtonsRightSide {
+  display: flex;
+  align-items: center;
+  transform: translate(25%, 100%);
+  cursor: pointer;
+}
+.totalPointsAllButtonsLeftSide {
+  width: 40%;
+  height: 130%;
+  display: flex;
+  transform: translate(10%, -105%);
+}
+.totalPointsAllButtonsLeftSide button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 0 5px;
+  background: linear-gradient(180deg, #212834 0%, #262f3d 0.01%, #212734 100%);
+  border: 0.842853px solid #a3a0a0;
+  border-radius: 3.97656px;
+  color: white;
+}
+.totalPointsContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70%;
+  padding: 0 5%;
+}
+.totalPointsContentLeftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  padding-top: 7%;
+  color: white;
+}
+.totalPointsContentRightSide {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 85%;
+  height: 100%;
+  padding-top: 3%;
+}
+.totalPointsContentRightSideFisrtBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 80%;
+  padding-top: 3%;
+  border-left: 0.533316px solid #686868;
+  border-bottom: 0.533316px solid #686868;
+}
+.totalPointsGraphBlock {
+  display: flex;
+  position: absolute;
+  width: 95%;
+  height: 35%;
+  top: 39%;
+  left: 2%;
+}
+.totalPointsGraph {
+  transform: rotate(-2deg);
+}
+.totalPointsInnerDot {
+  transform: translateY(-150%);
+}
+.totalPointsMarker {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: 23%;
+  left: 84%;
+  width: 25%;
+  height: 100%;
+}
+.totalPointsMarkerDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  border-radius: 5px;
+}
+.totalPointsDropDown {
+  transform: translateY(90%);
+}
+.totalPointsDotDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.totalPointsLines {
+  width: 98%;
+  height: 13%;
+  border-top: 0.533316px solid #686868;
+}
+.totalPointsContentRightSideSecondBlock {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 3%;
+  color: white;
+  font-size: 11px;
+}
+.totalPointsContentRightSideThirdBlock {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  width: 40%;
+  height: 8%;
+  position: absolute;
+  top: 97%;
+  left: 56%;
+  padding: 0 3%;
+  background: #212834;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px 0px;
+}
+.totalPointsContentRightSideThirdBlockItem {
+  display: flex;
+  align-items: center;
+  gap: 20%;
+  position: relative;
+}
+.totalPointsVector {
+  position: absolute;
+}
+.mostUsableExchanges {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13%;
+  background: #212734;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.mostUsableExchangesContent {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.mostUsableExchangesContentBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  color: rgba(255, 255, 255, 0.6);
+}
+.column_1 {
+  position: absolute;
+  bottom: 9%;
+}
+.coins {
+  height: 100%;
+  width: 20%;
+  background: #212734;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2%;
+}
+.coinsOval {
+  width: 90%;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.coinsOvalImage {
+  z-index: 1;
+}
+.coinOval {
+  transform: translateY(-59%);
+}
+.coinContent {
+  height: 75%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 15%;
+  left: 30%;
+}
+.coinContent_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.coinContent_2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+.coinsVektor {
+  display: flex;
+  align-items: center;
+}
+.coinTimes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: white;
+  font-size: 12px;
+}
+.coinSelectedTime {
+  background: #1a202c;
+  border: 0.911574px solid #a3a0a0;
+  border-radius: 1.82315px;
+  padding: 1% 2%;
+}
+.rightSideSecondBlock {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  height: 33%;
+  margin-top: 15px;
+}
+.usersChart {
+  height: 100%;
+  width: 32%;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #212734;
+  box-shadow: 0px 3.44681px 3.44681px rgba(0, 0, 0, 0.25);
+  border-radius: 12.9256px;
+}
+.usersChartUpperBlock {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.userChartProfile {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: #805ad5;
+  text-align: center;
+  font-size: 40px;
+  color: #ffffff;
+  padding-top: 15%;
+  cursor: pointer;
+}
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+}
+.userBallance {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #805ad5;
+  font-weight: 300;
+  font-size: 24.5409px;
+  line-height: 148%;
+}
+.usersChartDownerBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.userChartAllColumns {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+}
+.userChartColumn {
+  width: 3%;
+  border-radius: 3px 3px 0 0;
+  background: linear-gradient(180deg, #645a87 0%, #272c3b 100%);
+}
+.col_1 {
+  height: 80px;
+  border-radius: 4px 4px 0 20px;
+}
+.col_2,
+.col_5,
+.col_34,
+.col_37 {
+  height: 100px;
+}
+.col_3,
+.col_4,
+.col_35,
+.col_36 {
+  height: 112px;
+}
+.col_6,
+.col_23 {
+  height: 85px;
+}
+.col_7 {
+  height: 60px;
+}
+.col_8 {
+  height: 45px;
+}
+.col_9 {
+  height: 42px;
+}
+.col_10 {
+  height: 50px;
+}
+.col_11 {
+  height: 55px;
+}
+.col_12 {
+  height: 60px;
+}
+.col_13,
+.col_39 {
+  height: 65px;
+}
+.col_14 {
+  height: 75px;
+}
+.col_15 {
+  height: 90px;
+}
+.col_16,
+.col_21,
+.col_26 {
+  height: 110px;
+}
+.col_17,
+.col_20 {
+  height: 125px;
+}
+.col_18 {
+  height: 145px;
+}
+.col_19 {
+  height: 137px;
+}
+.col_22,
+.col_24 {
+  height: 95px;
+}
+.col_29,
+.col_33 {
+  height: 90px;
+}
+.col_25,
+.col_28 {
+  height: 105px;
+}
+.col_27 {
+  height: 115px;
+}
+.col_30,
+.col_32,
+.col_38 {
+  height: 80px;
+}
+.col_31 {
+  height: 70px;
+}
+.col_39 {
+  border-radius: 3px 3px 20px 0;
+}
+.userCharSvgs {
+  display: flex;
+}
+.userChartSvgBlock_1 {
+  display: flex;
+  align-items: baseline;
+}
+.userTimes {
+  width: 70%;
+  position: absolute;
+  top: 60%;
+}
+.analytics {
+  height: 100%;
+  width: 34%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #212734;
+  box-shadow: 0px 3.44681px 3.44681px rgba(0, 0, 0, 0.25);
+  border-radius: 12.9256px;
+}
+.analyticsContent {
+  width: 85%;
+  height: 15%;
+  padding: 3%;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    180deg,
+    #313947 0%,
+    rgba(65, 76, 95, 0.007) 99.99%,
+    rgba(33, 39, 51, 0) 100%
+  );
+  border: 0.7px solid #805ad5;
+  border-radius: 10px;
+  font-size: 13px;
+  color: white;
+}
+.analyticsbinanceText {
+  color: white;
+}
+.futures {
+  height: 100%;
+  width: 34%;
+  background: #212734;
+  box-shadow: 0px 3.44681px 3.44681px rgba(0, 0, 0, 0.25);
+  border-radius: 12.9256px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2%;
+}
+.futuresFirstBlock {
+  height: 25%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  padding: 5% 10% 5% 5%;
+  background: linear-gradient(
+    180deg,
+    #2b3341 0%,
+    rgba(61, 73, 95, 0.00693628) 99.99%,
+    rgba(33, 39, 51, 0) 100%
+  );
+  border: 0.482541px solid #686868;
+  border-radius: 5px;
+  color: white;
+}
+.futuresFirstBlockLeftSide {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.futuresFirstBlockSVGsection {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.futuresFirstBlockRightSide {
+  width: 50%;
+  padding: 2% 5%;
+  background: linear-gradient(
+    180deg,
+    #2b3341 0%,
+    rgba(61, 73, 95, 0.00693628) 99.99%,
+    rgba(33, 39, 51, 0) 100%
+  );
+  border: 0.2px solid #686868;
+  box-shadow: 0px 1px 2px black;
+  border-radius: 2.5px;
+  text-align: center;
+}
+.futuresSecondBlock {
+  height: 32%;
+  width: 90%;
+  background: #1f2633;
+  border: 0.482541px solid #686868;
+  border-radius: 5px;
+  position: relative;
+}
+.futureTimes {
+  position: absolute;
+  left: 1%;
+  bottom: 5%;
+}
+.futuresThirdBlock {
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 2%;
+  gap: 15%;
+}
+.futuresThirdBlockContent {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: white;
+}
+.rightSideThirdBlock {
+  height: 37%;
+  margin-top: 20px;
+  padding-bottom: 5%;
+}
+.holdings {
+  width: 100%;
+  height: 330px;
+  background: #212834;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+}
+.holdingsHeader {
+  height: 60px;
+}
+.holdingsTable {
+  text-align: left;
+  width: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: white;
+  border-collapse: collapse;
+}
+.theadTr {
+  height: 50px;
+  background: #272e3c;
+}
+.holdingsTh,
+.holdingsTd {
+  padding: 10px 20px;
+}
+.holdingsTableTr {
+  height: 70px;
+  border-bottom: 1px solid #3b3d50;
+}
+.holdingsThIcon {
+  height: 10px;
+}
+.holdingsTdIcon {
+  height: 18px;
+}
+.tdDiv {
+  display: flex;
+  align-items: center;
+}
